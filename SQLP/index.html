@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-bus"></i>
+          <h1>BusConnect</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Bus Ticket Management System</h2>
+          <p>Manage your bus ticket data efficiently</p>
+        </div>
+      </section>
+
+      <section class="data-entry">
+        <div class="container">
+          <h2>Select a Table to Manage Data</h2>
+          <div class="card-container">
+            <div class="card" onclick="location.href='users.html'">
+              <div class="card-icon"><i class="fas fa-users"></i></div>
+              <h3>Users</h3>
+              <p>Manage user accounts and profiles</p>
+            </div>
+            <div class="card" onclick="location.href='buses.html'">
+              <div class="card-icon"><i class="fas fa-bus-alt"></i></div>
+              <h3>Buses</h3>
+              <p>Manage bus information and details</p>
+            </div>
+            <div class="card" onclick="location.href='routes.html'">
+              <div class="card-icon"><i class="fas fa-route"></i></div>
+              <h3>Routes</h3>
+              <p>Manage bus routes and destinations</p>
+            </div>
+            <div class="card" onclick="location.href='tickets.html'">
+              <div class="card-icon"><i class="fas fa-ticket-alt"></i></div>
+              <h3>Tickets</h3>
+              <p>Manage ticket bookings and details</p>
+            </div>
+            <div class="card" onclick="location.href='payments.html'">
+              <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+              <h3>Payments</h3>
+              <p>Manage payment information</p>
+            </div>
+            <div class="card" onclick="location.href='cancellation.html'">
+              <div class="card-icon"><i class="fas fa-ban"></i></div>
+              <h3>Cancellations</h3>
+              <p>Manage ticket cancellations</p>
+            </div>
+            <div class="card" onclick="location.href='feedback.html'">
+              <div class="card-icon"><i class="fas fa-comment"></i></div>
+              <h3>Feedback</h3>
+              <p>Manage customer feedback</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

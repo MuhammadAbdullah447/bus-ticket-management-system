@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Routes - Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <h1>BusConnect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Manage Routes</h2>
+                <p>Add, edit, and delete route information</p>
+            </div>
+        </section>
+
+        <section class="data-management">
+            <div class="container">
+                <div class="actions-bar">
+                    <h2>Route Management</h2>
+                    <button id="toggleBtn" class="btn" onclick="toggleView('routeForm', 'routeTable')">View Records</button>
+                </div>
+
+                <div class="form-container" id="routeForm">
+                    <h3 class="form-title">Add New Route</h3>
+                    <form id="addRouteForm">
+                        <div class="form-group">
+                            <label for="source">Source</label>
+                            <input type="text" id="source" name="source" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="distance">Distance (KM)</label>
+                            <input type="number" id="distance" name="distance" class="form-control" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="estimatedTime">Estimated Time</label>
+                            <input type="text" id="estimatedTime" name="estimatedTime" class="form-control" placeholder="e.g. 2 hours 30 minutes" required>
+                        </div>
+                        <button type="submit" class="btn btn-block">Add Route</button>
+                    </form>
+                </div>
+
+                <div class="table-container" id="routeTable" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Source</th>
+                                <th>Destination</th>
+                                <th>Distance (KM)</th>
+                                <th>Estimated Time</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Routes will be populated here by script.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

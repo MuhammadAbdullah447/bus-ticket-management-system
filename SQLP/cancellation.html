@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Cancellations - Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <h1>BusConnect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Manage Cancellations</h2>
+                <p>Add, edit, and delete cancellation information</p>
+            </div>
+        </section>
+
+        <section class="data-management">
+            <div class="container">
+                <div class="actions-bar">
+                    <h2>Cancellation Management</h2>
+                    <button id="toggleBtn" class="btn" onclick="toggleView('cancellationForm', 'cancellationTable')">View Records</button>
+                </div>
+
+                <div class="form-container" id="cancellationForm">
+                    <h3 class="form-title">Add New Cancellation</h3>
+                    <form id="addCancellationForm">
+                        <div class="form-group">
+                            <label for="ticketId">Ticket</label>
+                            <select id="ticketId" name="ticketId" class="form-control" required>
+                                <option value="">Select Ticket</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cancellationDate">Cancellation Date</label>
+                            <input type="date" id="cancellationDate" name="cancellationDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="refundAmount">Refund Amount</label>
+                            <input type="number" id="refundAmount" name="refundAmount" class="form-control" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reason">Reason</label>
+                            <textarea id="reason" name="reason" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Add Cancellation</button>
+                    </form>
+                </div>
+
+                <div class="table-container" id="cancellationTable" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Ticket</th>
+                                <th>User</th>
+                                <th>Route</th>
+                                <th>Bus</th>
+                                <th>Cancellation Date</th>
+                                <th>Refund Amount</th>
+                                <th>Reason</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cancellationTableBody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

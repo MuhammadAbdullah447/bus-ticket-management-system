@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <h1>BusConnect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Manage Users</h2>
+                <p>Add, edit, and delete user information</p>
+            </div>
+        </section>
+
+        <section class="data-management">
+            <div class="container">
+                <div class="actions-bar">
+                    <h2>User Management</h2>
+                    <button id="toggleBtn" class="btn" onclick="toggleView('userForm', 'userTable')">View Records</button>
+                </div>
+
+                <div class="form-container" id="userForm">
+                    <h3 class="form-title" id="formTitle">Add New User</h3>
+                    <form id="addUserForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="role">Role</label>
+                            <select id="role" name="role" class="form-control" required>
+                                <option value="">Select Role</option>
+                                <option value="Passenger">Passenger</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" class="form-control">
+                        </div>
+                        <button
+    type="submit"
+    class="btn btn-block"
+    id="submitBtn">
+    Add User
+</button>
+                    </form>
+                </div>
+
+                <div class="table-container" id="userTable" style="display: none;">
+                    <table>
+                        <thead>
+                            <tr>
+    <th>ID</th>
+    <th>Full Name</th>
+    <th>Email</th>
+    <th>Role</th>
+    <th>City</th>
+    <th>Actions</th>
+</tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                            <!-- Users will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

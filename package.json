@@ -1,0 +1,28 @@
+{
+  "name": "bus-ticket-management-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "crud",
+    "bus-booking"
+  ],
+  "author": "Muhammad Abdullah",
+  "license": "ISC",
+  "description": "A full-stack Bus Ticket Booking & Management System with complete CRUD operations, built with Node.js, Express, MySQL, and vanilla JavaScript.",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BusConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <h1>BusConnect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We're here to help with any questions you may have</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content-section">
+            <div class="container">
+                <div class="contact-intro">
+                    <p>Have questions about BusConnect or need assistance with our platform? Our team is ready to help you. Choose the most convenient way to reach us below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-container">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Our Location</h4>
+                                <p>123 Transport Avenue<br>Bus City, BC 12345<br>United States</p>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <i class="fas fa-phone-alt"></i>
+                                <h4>Phone</h4>
+                                <p>Main Office: +1 (555) 123-4567<br>Support: +1 (555) 987-6543</p>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email</h4>
+                                <p>General Inquiries: info@busconnect.com<br>Support: support@busconnect.com<br>Sales: sales@busconnect.com</p>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <i class="fas fa-clock"></i>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 4pm<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-map">
+                            <h4>Find Us</h4>
+                            <div class="map-placeholder">
+                                <i class="fas fa-map"></i>
+                                <p>Interactive Map Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-container">
+                            <h3>Send Us a Message</h3>
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" class="form-control" required>
+                                        <option value="" selected disabled>Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="sales">Sales Question</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" class="form-control" rows="6" required></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-group">
+                                    <input type="checkbox" id="newsletter" class="form-checkbox">
+                                    <label for="newsletter">Subscribe to our newsletter</label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-block">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>How do I get started with BusConnect?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Getting started is easy! Simply contact our sales team, and we'll set up a demo account for you to explore the platform. Once you're ready to proceed, we'll help you with the full implementation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Is technical support included?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, all BusConnect plans include technical support. Our standard support hours are Monday to Friday, 9am to 6pm. Premium support packages with 24/7 assistance are also available.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Can BusConnect integrate with my existing systems?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>BusConnect offers various integration options with popular accounting, CRM, and payment processing systems. Our team can work with you to determine the best integration strategy for your specific needs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Is training provided for our staff?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we provide comprehensive training for your staff as part of the implementation process. Additional training sessions can be arranged as needed for new employees or refresher courses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple script to toggle FAQ answers
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                // Initially hide answers
+                answer.style.display = 'none';
+                
+                question.addEventListener('click', function() {
+                    // Toggle answer visibility
+                    if (answer.style.display === 'none') {
+                        answer.style.display = 'block';
+                        question.querySelector('i').classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        answer.style.display = 'none';
+                        question.querySelector('i').classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Tickets - Bus Ticket Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-bus"></i>
+          <h1>BusConnect</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Manage Tickets</h2>
+          <p>Add, edit, and delete ticket information</p>
+        </div>
+      </section>
+
+      <section class="data-management">
+        <div class="container">
+          <div class="actions-bar">
+            <h2>Ticket Management</h2>
+            <button
+              id="toggleBtn"
+              class="btn"
+              onclick="toggleView('ticketForm', 'ticketTable')"
+            >
+              View Records
+            </button>
+          </div>
+
+          <div class="form-container" id="ticketForm">
+            <h3 class="form-title">Add New Ticket</h3>
+            <form id="addTicketForm">
+              <div class="form-group">
+                <label for="userId">User</label>
+                <select id="userId" name="userId" class="form-control" required>
+                  <option value="">Select User</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="busId">Bus</label>
+                <select id="busId" name="busId" class="form-control" required>
+                  <option value="">Select Bus</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="routeId">Route</label>
+                <select
+                  id="routeId"
+                  name="routeId"
+                  class="form-control"
+                  required
+                >
+                  <option value="">Select Route</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="seatNumber">Seat Number</label>
+                <input
+                  type="number"
+                  id="seatNumber"
+                  name="seatNumber"
+                  class="form-control"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="bookingDate">Booking Date</label>
+                <input
+                  type="date"
+                  id="bookingDate"
+                  name="bookingDate"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="journeyDate">Journey Date</label>
+                <input
+                  type="date"
+                  id="journeyDate"
+                  name="journeyDate"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" class="form-control" required>
+                  <option value="Booked">Booked</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-block">Add Ticket</button>
+            </form>
+          </div>
+
+          <div class="table-container" id="ticketTable" style="display: none">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User</th>
+                  <th>Bus</th>
+                  <th>Route</th>
+                  <th>Seat</th>
+                  <th>Booking Date</th>
+                  <th>Journey Date</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Tickets will be populated here by script.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 BusConnect Management System. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
