@@ -101,9 +101,6 @@ You should see:
 ### 6. Open the app
 Open `SQLP/index.html` in your browser (or use a tool like VS Code's "Live Server" extension) and start exploring the system.
 
-## 📸 Screenshots
-
-*(Add a few screenshots here — e.g. the Users page, Tickets page, and the homepage — by dragging images into this section on GitHub, or referencing the images already included in the `SQLP/` folder.)*
 
 ## 🔮 Future Improvements
 
