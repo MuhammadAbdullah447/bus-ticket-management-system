@@ -8,7 +8,7 @@ This project manages 7 interconnected entities, each with full CRUD support:
 
 | Module | Description |
 |---|---|
-| 👤 **Users** | Manage passenger/admin accounts (name, email, role, city) |
+| 👤 **Users** | Manage passenger accounts (name, email, role, city) |
 | 🚌 **Buses** | Manage the bus fleet (bus number, type, seat capacity, operator) |
 | 🛣️ **Routes** | Manage travel routes (source, destination, distance, estimated time) |
 | 🎫 **Tickets** | Book tickets linking a user, bus, and route, with seat & journey details |
